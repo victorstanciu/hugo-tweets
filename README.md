@@ -1,4 +1,4 @@
-# Static user timeline for Hugo
+# Static Twitter timeline for Hugo
 
 I made this plugin for Hugo because I wanted a way to embed my own Twitter timeline on [my blog](https://tegowerk.eu) without having to load any external scripts or images. All it does is fetch the tweets via Twitter's own API and render them on each `hugo build`.
 
