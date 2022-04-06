@@ -1,0 +1,3 @@
+{{ .Scratch.Set "twitter_username" .Params.username }}
+{{ .Scratch.Set "twitter_results" (default 10 .Params.results) }}
+{{ partial "stimeline" . }}
