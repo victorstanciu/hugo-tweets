@@ -1,0 +1,52 @@
+:root {
+  --stweets-border-color: #e1e1e1;
+  --stweets-date-color: #666;
+}
+
+.stweets * {
+  margin: 0;
+  padding: 0;
+}
+
+.stweets__header {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.stweets__header__link {
+  font-weight: bold;
+}
+
+.stweets .stweet {
+  border-top: 1px solid var(--stweets-border-color);
+  padding: 1rem 0;
+}
+
+.stweets .stweet__date {
+  font-size: 0.8rem;
+  color: var(--stweets-date-color);
+  margin-bottom: 0.4rem;
+}
+
+.stweets .stweet__text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.stweets .stweet__text ul {
+  margin: -1.5rem 0 -1rem 1rem;
+  white-space: normal;
+}
+
+.stweets .stweet__text ul li {
+  margin-top: 0.5rem;
+}
+
+.stweets .stweet__text p {
+  margin-bottom: -1.2rem;
+}
+
+.stweets .stweet__thread_link {
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}

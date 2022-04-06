@@ -12,10 +12,10 @@ Once you have this token, you will need to make it accessible as an environment 
 
 ## How to install
 
-Download or clone this repository into your `/themes` directory:
+Download this repository into your `/themes` directory, or add it as a Git submodule:
 
 ```
-git clone git@github.com:victorstanciu/hugo-tweets.git
+git submodule add git@github.com:victorstanciu/hugo-tweets.git themes/hugo-tweets
 ```
 
 Edit your `config.toml`, `config.yaml`, or `config.json` file to load the theme **before** your other theme(s):
