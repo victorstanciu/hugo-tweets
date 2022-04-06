@@ -6,7 +6,7 @@ I made this plugin for Hugo because I wanted a way to embed my own Twitter timel
 
 ## Prerequisites
 
-You will first need to obtain an [OAauth Bearer (app-only) token](https://developer.twitter.com/en/docs/authentication/oauth-2-0) from Twitter. For this you will need a developer account and an application.
+You will first need to obtain an [OAuth 2.0 Bearer (app-only) token](https://developer.twitter.com/en/docs/authentication/oauth-2-0) from Twitter. For this you will need a developer account and an application.
 
 Once you have this token, you will need to make it accessible as an environment variable called `HUGO_TWITTER_API_TOKEN` for the `hugo` executable. There are plenty of guides online on how to do that for your operating system of choice, so I won't repeat that information here.
 
