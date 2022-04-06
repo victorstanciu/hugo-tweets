@@ -12,17 +12,19 @@ Once you have this token, you will need to make it accessible as an environment 
 
 ## How to install
 
-Download this repository into your `/themes` directory, or add it as a Git submodule:
+1. Download this repository into your `/themes` directory, or add it as a Git submodule:
+  
+    ```
+    git submodule add git@github.com:victorstanciu/hugo-tweets.git themes/hugo-tweets
+    ```
 
-```
-git submodule add git@github.com:victorstanciu/hugo-tweets.git themes/hugo-tweets
-```
+2. Edit your `config.toml`, `config.yaml`, or `config.json` file to load the theme **before** your other theme(s):
 
-Edit your `config.toml`, `config.yaml`, or `config.json` file to load the theme **before** your other theme(s):
+    ```
+    theme = ["hugo-tweets", "minima"]
+    ```
 
-```
-theme = ["hugo-tweets", "minima"]
-```
+3. Load or paste [the CSS file](https://github.com/victorstanciu/hugo-tweets/blob/master/assets/css/stweets.scss) into your theme. Don't mind the `.scss` extension, that's just to give SASS/SCSS users the option of `import`-ing the file, the code is otherwise plain CSS.
 
 ## How to embed
 
