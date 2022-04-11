@@ -13,7 +13,7 @@ Once you have this token, you will need to make it accessible as an environment 
 ## How to install
 
 1. Download this repository into your `/themes` directory, or add it as a Git submodule:
-  
+
     ```
     git submodule add git@github.com:victorstanciu/hugo-tweets.git themes/hugo-tweets
     ```

@@ -9,9 +9,9 @@
 
 <div class="stweets">
     {{ with $userJson.data }}
-      <div class="stweets__header">
-        <strong>{{ .name }}</strong> (<a href="https://twitter.com/{{ .username }}" class="stweets__header__link">@{{ .username }}</a>) on Twitter
-      </div>
+        <div class="stweets__header">
+            <strong>{{ .name }}</strong> (<a href="https://twitter.com/{{ .username }}" class="stweets__header__link">@{{ .username }}</a>) on Twitter
+        </div>
     {{ end }}
 
     {{ range $tweet := $tweetsJson.data }}
@@ -33,19 +33,19 @@
 
         <div class="stweet">
             <div class="stweet__date">
-              <a href="https://twitter.com/{{ $userJson.data.username }}/status/{{ $tweet.id }}" target="_blank" rel="noopener">
-                {{ $tweet.created_at | time.Format "Jan 2, 2006 @ 15:04 UTC" }}
-              </a>
+                <a href="https://twitter.com/{{ $userJson.data.username }}/status/{{ $tweet.id }}" target="_blank" rel="noopener">
+                    {{ $tweet.created_at | time.Format "Jan 2, 2006 @ 15:04 UTC" }}
+                </a>
             </div>
 
             <!-- The updated HTML should be safe to render -->
             <div class="stweet__text">{{ $text | safeHTML }}</div>
 
-          {{ if or (isset $tweet "referenced_tweets") (gt $tweet.public_metrics.reply_count 0) }}
-            <div class="stweet__thread_link">
-              <a href="https://twitter.com/i/web/status/{{ $tweet.conversation_id }}" target="_blank" rel="noopener">View thread</a>
-            </div>
-          {{ end }}
+            {{ if or (isset $tweet "referenced_tweets") (gt $tweet.public_metrics.reply_count 0) }}
+                <div class="stweet__thread_link">
+                    <a href="https://twitter.com/i/web/status/{{ $tweet.conversation_id }}" target="_blank" rel="noopener">View thread</a>
+                </div>
+            {{ end }}
         </div>
     {{ end }}
 </div>
